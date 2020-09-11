@@ -1,6 +1,6 @@
 package com.jualjodi.notificador;
 
-public class NotificadorCorreo extends Notificador {
+public class NotificadorCorreo extends ListaContactos<String> implements Notificador {
 
     public NotificadorCorreo(String... receptores){
         super(receptores);

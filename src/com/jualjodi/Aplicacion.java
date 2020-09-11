@@ -8,7 +8,7 @@ public class Aplicacion {
     private static Notificador notificador;
 
     public static void main(String[] args) {
-        setNotificador(new NotificadorSMS(3212786281L, 3304281L));
+        setNotificador(new NotificadorMasivo(new NotificadorSMS(3212786281L, 3304281L), new NotificadorCorreo("Dioro1999@gmail.com","Dioro99@hotmail.com")));
         hacerAlgo();
     }
 
