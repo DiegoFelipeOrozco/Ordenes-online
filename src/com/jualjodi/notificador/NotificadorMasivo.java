@@ -1,9 +1,8 @@
 package com.jualjodi.notificador;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-import static java.util.Arrays.*;
+import static java.util.Arrays.asList;
 
 public class NotificadorMasivo implements Notificador {
 
