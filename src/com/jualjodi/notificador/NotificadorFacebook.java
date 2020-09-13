@@ -1,13 +1,12 @@
 package com.jualjodi.notificador;
 
-public class NotificadorCorreo extends NotificadorMultiReceptor<String> {
+public class NotificadorFacebook extends NotificadorMultiReceptor<String> {
 
-    public NotificadorCorreo(String... receptores){
+    public NotificadorFacebook(String... receptores){
         super(receptores);
     }
-
     public void enviar(String mensaje) {
-        System.out.println("enviando mensaje '"+mensaje+"' por correo a");
+        System.out.println("enviando mensaje '"+mensaje+"' por Facebook a");
         for (Object receptor: receptores){
             System.out.println(receptor.toString());
         }

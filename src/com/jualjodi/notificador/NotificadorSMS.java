@@ -1,6 +1,6 @@
 package com.jualjodi.notificador;
 
-public class NotificadorSMS extends ListaContactos<Long> implements Notificador {
+public class NotificadorSMS extends NotificadorMultiReceptor<Long> {
     public NotificadorSMS(Long... receptores) {
         super(receptores);
     }

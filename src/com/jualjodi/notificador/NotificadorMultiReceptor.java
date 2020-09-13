@@ -4,19 +4,19 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public abstract class ListaContactos<T> {
+public abstract class NotificadorMultiReceptor<TipoId> implements Notificador {
 
-    protected Set<T> receptores;
+    protected Set<TipoId> receptores;
 
-    public ListaContactos(T... receptores) {
+    public NotificadorMultiReceptor(TipoId... receptores) {
         this.receptores = new HashSet<>();
         Collections.addAll(this.receptores, receptores);
     }
 
-    public void nuevoReceptor(T receptor){
+    public void nuevoReceptor(TipoId receptor){
         receptores.add(receptor);
     }
-    public void eliminarReceptor(T receptor){
+    public void eliminarReceptor(TipoId receptor){
         receptores.remove(receptor);
     }
 }

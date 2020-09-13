@@ -1,14 +1,15 @@
 package com.jualjodi.notificador;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import static java.util.Arrays.asList;
 
-public class NotificadorMasivo implements Notificador {
+public class NotificadorMultitipo implements Notificador {
 
-    private ArrayList<Notificador> notificadores;
+    private Collection<Notificador> notificadores;
 
-    public NotificadorMasivo(Notificador... notificadores){
+    public NotificadorMultitipo(Notificador... notificadores){
         this.notificadores = new ArrayList();
         this.notificadores.addAll(asList(notificadores));
     }
